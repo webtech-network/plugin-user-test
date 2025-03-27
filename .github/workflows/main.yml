@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Testing the plugin
+        id: test
+        uses: webtech-network/test-plugin@v1
+        with:
+          input-1: 1
+          input 2: 2
+          input-3: 3
+          input-4: 4
