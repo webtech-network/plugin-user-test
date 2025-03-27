@@ -13,3 +13,11 @@ jobs:
           css-weight: 20
           js-weight: 30
           timeout: 40
+      - name: autograder
+        id: autograde
+        uses: webtech-network/webcode-autograder@v8
+        with:
+          html-weight: 10
+          css-weight: 20
+          js-weight: 30
+          timeout: 40
