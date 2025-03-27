@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Testing the plugin
         id: test
-        uses: webtech-network/test-plugin@v4
+        uses: webtech-network/test-plugin@v3
         with:
           html-weight: 10
           css-weight: 20
