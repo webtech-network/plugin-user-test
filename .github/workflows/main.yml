@@ -17,7 +17,7 @@ jobs:
         id: autograde
         uses: webtech-network/webcode-autograder@v1
         with:
-          html-weight: 10
+          html-weight: 50
           css-weight: 20
           js-weight: 30
           timeout: 40
