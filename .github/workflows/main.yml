@@ -15,7 +15,7 @@ jobs:
           timeout: 40
       - name: autograder
         id: autograde
-        uses: webtech-network/webcode-autograder@v1
+        uses: webtech-network/webcode-autograder@test
         with:
           html-weight: 50
           css-weight: 20
