@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: debug
-        run: ls -R
       - name: Testing the plugin
         id: test
         uses: webtech-network/test-plugin@v5
@@ -15,6 +13,8 @@ jobs:
           css-weight: 20
           js-weight: 30
           timeout: 40
+      - name: debug
+        run: ls -R
       - name: autograder
         id: autograde
         uses: webtech-network/webcode-autograder@test
