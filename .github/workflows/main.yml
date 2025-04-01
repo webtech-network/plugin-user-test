@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - name: debug
+        run: ls -R
       - name: Testing the plugin
         id: test
-        uses: webtech-network/test-plugin@v3
+        uses: webtech-network/test-plugin@v5
         with:
           html-weight: 50
           css-weight: 20
